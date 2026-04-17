@@ -25,37 +25,39 @@ This project demonstrates how to build a scalable and modular ETL pipeline by co
 📰 News headlines (web scraping/API)
 
 The pipeline processes raw data into clean, structured datasets and visualizes insights through an interactive dashboard.
+## 🏗 Architecture
 
-🏗 Architecture
-          +-------------------+
-          |   Data Sources    |
-          |-------------------|
-          | CSV | APIs | Web  |
-          +--------+----------+
-                   |
-                   v
-          +-------------------+
-          |   Extract Layer   |
-          +-------------------+
-                   |
-                   v
-          +-------------------+
-          | Transform Layer   |
-          | (Cleaning, Merge, |
-          | Validation)       |
-          +-------------------+
-                   |
-                   v
-          +-------------------+
-          |   Load Layer      |
-          | (Processed Data)  |
-          +-------------------+
-                   |
-                   v
-          +-------------------+
-          |   Dashboard       |
-          | (Visualization)   |
-          +-------------------+
+```
++-------------------+
+|   Data Sources    |
+|-------------------|
+| CSV | APIs | Web  |
++--------+----------+
+         |
+         v
++-------------------+
+|   Extract Layer   |
++-------------------+
+         |
+         v
++-------------------+
+| Transform Layer   |
+| (Cleaning, Merge, |
+| Validation)       |
++-------------------+
+         |
+         v
++-------------------+
+|   Load Layer      |
+| (Processed Data)  |
++-------------------+
+         |
+         v
++-------------------+
+|   Dashboard       |
+| (Visualization)   |
++-------------------+
+```
 ✨ Features
 ✅ Multi-source data ingestion (CSV, APIs, scraping)
 ✅ Data cleaning and transformation pipelines
