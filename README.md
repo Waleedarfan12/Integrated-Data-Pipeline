@@ -2,21 +2,24 @@
 
 An end-to-end ETL pipeline integrating retail, weather, and news headlines data with validation, logging, and an interactive dashboard.
 This project simulates a production-grade data engineering workflow designed for portfolio and real-world use cases.
+## 📑 Table of Contents
 
-📑 Table of Contents
-Overview
-Architecture
-Features
-Tech Stack
-Project Structure
-Setup
-Usage
-Data Pipeline Flow
-Outputs
-Dashboard
-Future Improvements
-License
-📖 Overview
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Data Pipeline Flow](#data-pipeline-flow)
+- [Outputs](#outputs)
+- [Dashboard](#dashboard)
+- [Future Improvements](#future-improvements)
+- [License](#license)
+
+---
+
+## 📖 Overview
 
 This project demonstrates how to build a scalable and modular ETL pipeline by combining multiple real-world data sources:
 
@@ -69,42 +72,41 @@ The pipeline processes raw data into clean, structured datasets and visualizes i
 ✅ Interactive dashboard with filters and visualizations
 ✅ Docker-ready setup for easy deployment
 
-🛠 Tech Stack
+## 🛠️ Tech Stack
 
-Languages
-Python
-Libraries & Frameworks
-pandas
-PySpark
-FastAPI
-Plotly
-Matplotlib
-Seaborn
-Tools & Platforms
-Docker
-AWS (optional deployment)
-Jupyter Notebook
+**Languages:**
+- Python
+
+**Libraries & Frameworks:**
+- pandas
+- PySpark
+- FastAPI
+- Plotly
+- Matplotlib
+- Seaborn
+
+**Tools & Platforms:**
+- Docker
+- AWS (optional deployment)
+- Jupyter Notebook
 
 ## 📁 Project Structure
 
-**project-root/**
-- **data/**
-  - raw/ - Raw ingested data
-  - staging/ - Intermediate cleaned data
-  - processed/ - Final transformed datasets
-- **etl/**
-  - **extract/** (retail.py, weather_api.py, news_scraper.py)
-  - **transform/** (cleaning.py, merging.py, feature_engineering.py)
-  - **load/** (save_to_csv.py, save_to_db.py)
-  - pipeline.py - Main pipeline runner
-- **utils/** - (logger.py, validator.py, config.py)
-- **dashboard/** - (app.py, components/)
-- **notebooks/** - exploratory_analysis.ipynb
-- **tests/** - (test_extract.py, test_transform.py, test_load.py)
-- **config/** - config.yaml
-- **logs/** - Auto-generated logs
-- **docker/** - (Dockerfile, docker-compose.yml)
-- .env, requirements.txt, README.md, main.py
+| Directory/File | Contents |
+|----------------|----------|
+| **data/** | raw/, staging/, processed/ |
+| **etl/extract/** | retail.py, weather_api.py, news_scraper.py |
+| **etl/transform/** | cleaning.py, merging.py, feature_engineering.py |
+| **etl/load/** | save_to_csv.py, save_to_db.py |
+| **etl/** | pipeline.py |
+| **utils/** | logger.py, validator.py, config.py |
+| **dashboard/** | app.py, components/ |
+| **notebooks/** | exploratory_analysis.ipynb |
+| **tests/** | test_extract.py, test_transform.py, test_load.py |
+| **config/** | config.yaml |
+| **logs/** | Auto-generated logs |
+| **docker/** | Dockerfile, docker-compose.yml |
+| **root/** | .env, requirements.txt, README.md, main.py |
 
 ⚙️ Setup
 1️⃣ Clone the Repository
