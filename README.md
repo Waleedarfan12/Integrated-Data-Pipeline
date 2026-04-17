@@ -85,60 +85,26 @@ Docker
 AWS (optional deployment)
 Jupyter Notebook
 
-project-root/
-│
-├── data/
-│   ├── raw/                      # Raw ingested data (CSV, API dumps, scraped data)
-│   ├── staging/                  # Intermediate cleaned data
-│   ├── processed/                # Final transformed datasets
-│
-├── etl/
-│   ├── extract/
-│   │   ├── retail.py             # Extract retail dataset
-│   │   ├── weather_api.py        # Fetch weather data
-│   │   ├── news_scraper.py       # Scrape news headlines
-│   │
-│   ├── transform/
-│   │   ├── cleaning.py           # Data cleaning logic
-│   │   ├── merging.py            # Dataset merging logic
-│   │   ├── feature_engineering.py# Create new features
-│   │
-│   ├── load/
-│   │   ├── save_to_csv.py        # Save processed data
-│   │   ├── save_to_db.py         # (Optional) Load into database
-│
-│   ├── pipeline.py               # Main pipeline runner (end-to-end execution)
-│
-├── utils/
-│   ├── logger.py                 # Logging configuration
-│   ├── validator.py              # Data validation rules
-│   ├── config.py                 # Environment/config handling
-│
-├── dashboard/
-│   ├── app.py                    # Dashboard app (Plotly / FastAPI)
-│   ├── components/               # UI components (charts, filters)
-│
-├── notebooks/
-│   ├── exploratory_analysis.ipynb
-│
-├── tests/
-│   ├── test_extract.py
-│   ├── test_transform.py
-│   ├── test_load.py
-│
-├── config/
-│   ├── config.yaml               # Pipeline configuration
-│
-├── logs/                         # Pipeline logs (auto-generated)
-│
-├── docker/
-│   ├── Dockerfile
-│   ├── docker-compose.yml
-│
-├── .env                          # Environment variables
-├── requirements.txt
-├── README.md
-└── main.py                       # Entry point for full pipeline
+## 📁 Project Structure
+
+**project-root/**
+- **data/**
+  - raw/ - Raw ingested data
+  - staging/ - Intermediate cleaned data
+  - processed/ - Final transformed datasets
+- **etl/**
+  - **extract/** (retail.py, weather_api.py, news_scraper.py)
+  - **transform/** (cleaning.py, merging.py, feature_engineering.py)
+  - **load/** (save_to_csv.py, save_to_db.py)
+  - pipeline.py - Main pipeline runner
+- **utils/** - (logger.py, validator.py, config.py)
+- **dashboard/** - (app.py, components/)
+- **notebooks/** - exploratory_analysis.ipynb
+- **tests/** - (test_extract.py, test_transform.py, test_load.py)
+- **config/** - config.yaml
+- **logs/** - Auto-generated logs
+- **docker/** - (Dockerfile, docker-compose.yml)
+- .env, requirements.txt, README.md, main.py
 
 ⚙️ Setup
 1️⃣ Clone the Repository
