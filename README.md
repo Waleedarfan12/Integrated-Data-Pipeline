@@ -58,7 +58,9 @@ The pipeline processes raw data into clean, structured datasets and visualizes i
 | (Visualization)   |
 +-------------------+
 ```
+
 ✨ Features
+
 ✅ Multi-source data ingestion (CSV, APIs, scraping)
 ✅ Data cleaning and transformation pipelines
 ✅ Schema validation and error handling
@@ -66,7 +68,9 @@ The pipeline processes raw data into clean, structured datasets and visualizes i
 ✅ Modular and reusable ETL components
 ✅ Interactive dashboard with filters and visualizations
 ✅ Docker-ready setup for easy deployment
+
 🛠 Tech Stack
+
 Languages
 Python
 Libraries & Frameworks
@@ -80,6 +84,7 @@ Tools & Platforms
 Docker
 AWS (optional deployment)
 Jupyter Notebook
+
 project-root/
 │
 ├── data/
@@ -134,6 +139,7 @@ project-root/
 ├── requirements.txt
 ├── README.md
 └── main.py                       # Entry point for full pipeline
+
 ⚙️ Setup
 1️⃣ Clone the Repository
 git clone https://github.com/waleedarfan12/Integrated-Data-Pipeline.git
