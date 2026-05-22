@@ -2,6 +2,14 @@
 
 An end-to-end ETL pipeline integrating retail, weather, and news headlines data with validation, logging, and an interactive dashboard.
 This project simulates a production-grade data engineering workflow designed for portfolio and real-world use cases.
+
+### 📬 Evaluation Quick Start (For Reviewers)
+To instantly test the interactive **Public API Consumer client** along with its explicit error, bad input, and chaos handling on a completely fresh machine:
+1. Open your terminal at the project root.
+2. Install dependencies: `pip install requests`
+3. Run the application: `python app.py`
+
+---
 ## 📑 Table of Contents
 
 - [Overview](#overview)
